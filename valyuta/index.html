@@ -1,62 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Converter</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
+
 <body>
-    
-<header>
-    <div>
-        <img src="img.svg" alt="Bank">
-    </div>
-    <div>
-        <ul>
-            <li>БАНК</li>
-            <li>БИЗНЕС</li>
-            <li>ИНВЕСТИЦИИ</li>
-            <li>СТРАХОВАНИЕ</li>
-            <li>МОБАЙЛ</li>
-            <li>ПУТЕШЕСТВИЯ</li>
-            <li>РАЗВЛЕЧЕНИЯ</li>
-        </ul>
-    </div>
-    <div>
-        <button>ВОЙТИ</button>
-    </div>
-</header>
-
-<main>
-    <h1>Конвертер валют онлайн</h1>
-    <div class="content">
-        <div class="first-content box">
-            <p>У меня есть</p>
-            <div class="first-box">
-                <button class="selected">RUB</button><button>USD</button><button>EUR</button><button>GBP</button>
+    <header>
+        <div class="header">
+            
+            <div class="logo">
+                <img src="./image/logo.svg">
             </div>
-            <form class="in safe">
-                <input type="number">
-                <p></p>
-            </form>
-        </div>
-        <div class="second-content box">
-            <p>Хочу приобрести</p>
-            <div class="second-box">
-                <button class="selected">RUB</button><button>USD</button><button>EUR</button><button>GBP</button>
+            <div class="nav-links">
+                <a href="">БАНК</a>
+                <a href="">БИЗНЕС</a>
+                <a href="">ИНВЕСТИЦИИ</a>
+                <a href="">СТРАХОВАНИЕ</a>
+                <a href="">МОБАЙЛ</a>
+                <a href="">ПУТЕШЕСТВИЯ</a>
+                <a href="">РАЗВЛЕЧЕНИЯ</a>
             </div>
-            <div class="out safe">
-                <input type="number">
-                <p></p>
+            <div class="sign">
+                <button>ВОЙТИ</button>
             </div>
         </div>
-    </div>
-</main>
-
-
-
-    <script src='app.js'></script>
+    </header>
+    <main>
+        <div class="heading">
+            <h1>Onlayn valyuta çeviricisi</h1>
+        </div>
+        <div class="all">
+            <div class="first">
+                <p class="text">У меня есть</p>
+                <div class="table">
+                    <div id="rubl" name="one" class="currency change">RUB</div>
+                    <div id="dollar" name="one" class="currency">USD</div>
+                    <div id="euro" name="one" class="currency">EUR</div>
+                    <div id="fs" name="one" class="currency">GBP</div>
+                </div>
+                <div class="money">
+                    <input type="text" value='1' id="first-input">
+                    <p class="exchange-rate"></p>
+                </div>
+            </div>
+            <div class="second">
+                <p class="text">Хочу приобрести</p>
+                <div class="table1">
+                    <div id="rubl1" name="two" class="currency1">RUB</div>
+                    <div id="dollar1" name="two" class="currency1 change">USD</div>
+                    <div id="euro1" name="two" class="currency1">EUR</div>
+                    <div id="fs1" name="two" class="currency1">GBP</div>
+                    
+                </div>
+                <div class="money">
+                    <input type="text" id="second-input">
+                    <p class="exchange-rate1"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
 </body>
+
 </html>
